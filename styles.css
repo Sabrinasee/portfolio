@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #222;
+    color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-weight: 300;
+}
+
+.nav-links a:hover {
+    color: #848585;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333; 
+    font-weight: bolder;
+}
+
+.name {
+    color: #b82b12; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex;
+    }
+}
+
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.section h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+.section p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: auto; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item p {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gallery-container {
+    padding: 20px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1) rotate(3deg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
